@@ -11,7 +11,6 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
 })
 modelUser(sequelize);
 
-
 module.exports = {
     ...sequelize.models,
     sq: sequelize,
