@@ -5,7 +5,6 @@ const {User} = require('../db');
 router.post('/', async (req, res) => {
     const {name, lastName, email, role, active} = req.body;
     try{
-
     const newUser = await User.create({
         name, lastName, email, role, active
     })
